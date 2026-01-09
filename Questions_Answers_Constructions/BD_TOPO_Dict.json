@@ -1,0 +1,45 @@
+{
+  "BATI": {
+    "BATIMENT.shp" : {"base":  "building",
+      "USAGE1": {"Agricole": "agricultural building", "Annexe": "annexe building", "Commercial et services": "commercial building", "Industriel": "industrial building", "Religieux": "religious building", "Résidentiel": "residential building" },
+      "exclude":  []},
+    "CIMETIERE.shp" : {"base":  "cemetery", "exclude":  []},
+    "TERRAIN_DE_SPORT.shp" : {"base":  "sports field",
+      "NAT_DETAIL": {"City-stade": "multi-games court", "Piste de cynodrome": "dog-racing track", "Piste de sports mécaniques": "mechanical sports track", "Piste de vélodrome": "cycling track",  "Piste d'hippodrome": "horse racing track",  "Stade d'athlétisme": "running track",  "Terrain de basket-ball": "basket-ball court",  "Terrain de football": "football pitch",  "Terrain de handball": "handball court",   "Terrain de pelote basque": "basque pelota court",   "Terrain de rugby":"rugby pitch",  "Terrain de volley-ball": "volley-ball court"},
+      "NATURE": {"Bassin de natation":  "swimming pool", "Terrain de tennis": "tennis court"},
+      "exclude":  []},
+    "RESERVOIR.shp" : {"base": "water tank", "exclude":  [] },
+    "PYLONE.shp" : {"base":  "pylon", "exclude":  ["area","density"]},
+    "CONSTRUCTION_SURFACIQUE.shp": {"exclude": [],"NATURE": {"Ecluse": "water lock", "Pont": "bridge", "Barrage": "dam"}}
+  },
+  "OCCUPATION_DU_SOL": {
+    "ZONE_D_ESTRAN.shp" : {"base": "foreshore zone" , "exclude":  ["area","density"]},
+    "ZONE_DE_VEGETATION.shp" : {"base":  "vegetation zone",
+      "NATURE": {"Bananeraie":  "banana plantation", "Bois": "wooded area", "Canne à sucre": "sugar cane plantation", "Forêt fermée de conifères": "coniferous forest", "Forêt fermée de feuillus": "deciduous forest", "Forêt fermée mixte": "mixed forest", "Forêt ouverte": "young forest plantation", "Haie": "hedge", "Houblonnière": "field of hop plants", "Lande ligneuse": "woody plant","Peupleraie": "poplar plantation", "Rizière": "rice plantation",  "Vigne": "vineyard"},
+      "exclude": []}
+  },
+  "HYDROGRAPHIE": {
+    "SURFACE_HYDROGRAPHIQUE.shp": {"base": "water area",
+      "NATURE": {"Canal":  "canal", "Delta": "river delta", "Estuaire": "estuary", "Lac": "lake", "Lagune": "lagoon", "Marais": "swamp", "Retenue":  "pond", "Retenue-barrage":  "reservoir"},
+      "exclude": []}
+  },
+  "TRANSPORT": {
+    "AERODROME.shp": {"base":  "airfield", "exclude": []},
+    "EQUIPEMENT_DE_TRANSPORT.shp": {"base":  "transportation construction",
+      "NATURE": {"Aérogare": "airport","Aire de repos ou de service": "rest area", "Arrêt voyageurs":  "train stop", "Carrefour":  "road intersection", "Gare fret uniquement":  "freight station", "Gare téléphérique": "aerial tramway station", "Gare voyageurs uniquement": "train station", "Gare routière": "bus station", "Gare maritime": "maritime station", "Parking": "parking lot","Station de métro": "metro station", "Station de tramway": "tramway station"  },
+      "exclude":  []},
+    "TRONCON_DE_ROUTE.shp": {"base":  "road", "exclude":  ["area","density"]},
+    "TRONCON_DE_VOIE_FERREE.shp": {"base":  "railway", "exclude": ["area","density"]}
+  },
+  "ZONES_REGLEMENTEES": {
+    "FORET_PUBLIQUE.shp": {"base": "public forest", "exclude": []},
+    "PARC_OU_RESERVE.shp": {"base": "national park", "exclude":  []}
+  },
+  "SERVICES_ET_ACTIVITES": {
+    "TOPONYMIE_SERVICES_ET_ACTIVITES.shp": {
+      "exclude": ["area","density"],
+      "NATURE": {"Hôpital": "hospital", "Lycée": "high school", "Mairie": "city hall", "Maison de retraite":  "nursing home", "Monument": "monument", "Musée": "museum", "Palais de justice": "courthouse", "Police": "police station", "Collège": "middle school", "Culte chrétien": "church", "Culte israélite": "synagogue", "Culte musulman": "mosque", "Enseignement primaire":"elementary school"   }
+    }
+  }
+
+}
